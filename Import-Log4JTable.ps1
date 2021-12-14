@@ -211,8 +211,7 @@ CREATE TABLE IF NOT EXISTS $Database.$TableName(
   Links VARCHAR(1024),
   PRIMARY KEY (`Supplier`, `Product`)
 );
-DELETE FROM $Database.$TableName;
-INSERT IGNORE INTO $TableName VALUES "
+REPLACE INTO $TableName VALUES "
 foreach($software in $softwareList) {
     $sqlQuery += "$($software.GetSQLValueString()),"
 }
