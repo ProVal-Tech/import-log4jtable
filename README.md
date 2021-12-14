@@ -1,6 +1,8 @@
 # Overview
 Installs and populates a table in a MySQL with a list of potential Log4Shell affected software.
 
+Many thanks to [NCSC-NL](https://github.com/NCSC-NL) for their extensive [list](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md).
+
 # Requirements
 - PowerShell v5
 - `mysql.exe` located in any subdirectory of `$env:ProgramFiles\MySQL`
